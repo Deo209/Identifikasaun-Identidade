@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Input Dadus Ema</h2>
+
+    <input type="text" id="nama" placeholder="Nama">
+    <input type="file" id="foto">
+
+    <button class="btn-success" onclick="simpan()">Hatama</button>
+    <button class="btn-danger" onclick="exit()">Exit</button>
+
+    <h3>Lista Dadus</h3>
+    <ul id="listData"></ul>
+</div>
+
+<div class="container">
+    <h2>Buka Ema</h2>
+
+    <input type="text" id="searchNaran" placeholder="Input Naran">
+
+    <button class="btn-primary" onclick="cari()">Fosai</button>
+    <button class="btn-danger" onclick="refreshPage()">Refresh</button>
+
+    <br>
+    <img id="hasilFoto" width="200">
+
+    <br><br>
+    <a href="login.html">Login Admin</a>
+</div>
+
+<div class="container">
+    <h2>Login Admin</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button class="btn-primary" onclick="login()">Login</button>
+    <button class="btn-danger" onclick="cancel()">Cancela</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
